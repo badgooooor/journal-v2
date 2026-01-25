@@ -54,10 +54,5 @@ const items = [
     icon: "solar:document-add-outline",
   },
   { name: "Lab", path: "/lab", icon: "heroicons:beaker" },
-  {
-    name: "Bookmarks",
-    path: "/bookmarks",
-    icon: "solar:bookmark-linear",
-  },
 ];
 </script>
