@@ -1,6 +1,10 @@
 <template>
   <main class="min-h-screen">
-    <AppHeader class="mb-12" title="Projects" :description="description" />
+    <AppHeader
+      class="mb-12"
+      :title="$t('projects.title')"
+      :description="$t('projects.description')"
+    />
     <div class="space-y-4">
       <AppProjectCard
         v-for="(project, id) in projects"
@@ -12,11 +16,11 @@
 </template>
 
 <script setup>
-const description =
-  "I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.";
+const { t } = useI18n();
+
 useSeoMeta({
-  title: "Projects | Fayaz Ahmed",
-  description,
+  title: () => t("seo.projects.title"),
+  description: () => t("projects.description"),
 });
 
 const { data: projects } = await useAsyncData("projects-all", () =>

@@ -26,6 +26,8 @@
 </template>
 
 <script setup>
+const { locale } = useI18n();
+
 defineProps({
   article: {
     type: Object,
@@ -35,7 +37,8 @@ defineProps({
 
 const getReadableDate = (dateString) => {
   const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
+  const localeCode = locale.value === "th" ? "th-TH" : "en-US";
+  return date.toLocaleDateString(localeCode, {
     year: "numeric",
     month: "short",
     day: "numeric",

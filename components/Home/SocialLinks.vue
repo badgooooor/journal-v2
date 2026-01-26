@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">FIND ME ON</h2>
+    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">
+      {{ $t("home.findMeOn") }}
+    </h2>
     <div class="space-y-5">
       <NuxtLink
         v-for="link in links"
