@@ -1,13 +1,17 @@
 <template>
   <UApp>
     <NuxtLoadingIndicator color="#14b8a6" />
-    <AppNavbar />
-    <div class="h-32"></div>
-    <UContainer>
-      <NuxtPage />
-    </UContainer>
-    <div class="h-32"></div>
-    <AppFooter />
+    <div class="min-h-screen w-screen p-4">
+      <div
+        class="w-full min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-4rem)] flex flex-col border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+      >
+        <AppNavbar />
+        <main class="flex-1 overflow-auto px-6 sm:px-12 py-8">
+          <NuxtPage />
+        </main>
+        <AppFooter />
+      </div>
+    </div>
   </UApp>
 </template>
 
