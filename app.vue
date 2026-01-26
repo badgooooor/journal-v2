@@ -3,17 +3,22 @@
     <NuxtLoadingIndicator color="#14b8a6" />
     <div class="h-screen w-screen p-4 sm:py-8 sm:px-8">
       <div
-        class="w-full h-full flex flex-col border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 overflow-hidden"
+        class="w-full h-full flex flex-col border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 overflow-hidden relative"
       >
-        <AppNavbar />
-        <main class="flex-1 overflow-auto px-6 sm:px-12 py-8">
+        <HomeBackground v-if="route.name.startsWith('index')" />
+        <AppNavbar class="relative z-10" />
+        <main class="relative z-10 flex-1 overflow-auto px-6 sm:px-12 py-8">
           <NuxtPage />
         </main>
-        <AppFooter />
+        <AppFooter class="relative z-10" />
       </div>
     </div>
   </UApp>
 </template>
+
+<script setup>
+const route = useRoute();
+</script>
 
 <style>
 .page-enter-active,

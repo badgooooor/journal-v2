@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="sticky bottom-0 flex items-center justify-between px-6 sm:px-12 py-4 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400"
+    class="sticky bottom-0 flex items-center justify-between px-6 sm:px-12 py-4 bg-transparent text-sm text-gray-500 dark:text-gray-400"
   >
     <p>{{ $t("footer.copyright", { year: new Date().getFullYear() }) }}</p>
     <nav class="flex items-center gap-3">
