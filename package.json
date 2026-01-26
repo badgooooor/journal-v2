@@ -23,6 +23,7 @@
     "@nuxt/fonts": "^0.13.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.4.0",
+    "@nuxtjs/i18n": "^10.2.1",
     "vue-use-fixed-header": "^2.0.3"
   }
 }
