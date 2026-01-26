@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <main class="min-h-full">
     <AppHeader
       class="mb-12"
       :title="$t('projects.title')"

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-50 flex items-center justify-between px-6 sm:px-12 py-4 border-b border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+    class="sticky top-0 z-50 flex items-center justify-between px-6 sm:px-12 py-4 bg-white dark:bg-gray-900"
   >
     <ULink
       :to="localePath('/')"
