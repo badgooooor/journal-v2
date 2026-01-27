@@ -7,8 +7,8 @@
   "home": {
     "greeting": "สวัสดี!",
     "bio": {
-      "intro": "ผมชื่อ Fayaz เป็นวิศวกรซอฟต์แวร์ วิศวกรผลิตภัณฑ์ และนักออกแบบจากบังกาลอร์ ประเทศอินเดีย ผมเชี่ยวชาญในการสร้างเว็บแอปพลิเคชันและเว็บไซต์โดยใช้ Javascript, React, Vue และ Node ผมผัดวันประกันพรุ่งในการสร้างเว็บไซต์นี้มาหลายปี แต่ในที่สุดก็มาถึงแล้ว ผมได้สร้างพื้นที่เล็กๆ ของตัวเองบนอินเทอร์เน็ตเพื่อแบ่งปันการทดลองสนุกๆ โปรเจกต์เจ๋งๆ และความคิด (ส่วนใหญ่เกี่ยวกับเทคโนโลยีและการออกแบบ)",
-      "work": "ในเวลากลางวัน ผมเป็น Fullstack Developer ที่ {company} และในเวลากลางคืน (และวันหยุดสุดสัปดาห์) ผมยุ่งอยู่กับการทดลองเครื่องมือหรือแอปต่างๆ ที่กำลังสร้าง"
+      "intro": "Thailand based software engineer. Specialized on web apps, backends, automated testing. Love tackling challenges, deliver impactful things with my knowledge and a bit of curiosity.",
+      "work": "QA Engineer by day and hustling over side projects by night/weekend."
     },
     "recentArticles": "บทความล่าสุด",
     "allArticles": "บทความทั้งหมด",
@@ -24,22 +24,22 @@
   },
   "articles": {
     "title": "บทความ",
-    "description": "ความคิดเชิงลึกทั้งหมดของผมเกี่ยวกับการเขียนโปรแกรม ส่วนติดต่อผู้ใช้ การออกแบบผลิตภัณฑ์ และอื่นๆ รวบรวมตามลำดับเวลา"
+    "description": "เรื่องยาวที่เกี่ยวกับเทคหรือไม่ก็ไม่เกี่ยวเลย"
   },
   "projects": {
     "title": "โปรเจกต์",
-    "description": "ผมได้ทำโปรเจกต์เล็กๆ มากมายตลอดหลายปีที่ผ่านมา แต่เหล่านี้คือโปรเจกต์ที่ผมภูมิใจที่สุด หลายโปรเจกต์เป็นโอเพนซอร์ส ถ้าคุณเห็นอะไรที่น่าสนใจ ลองดูโค้ดและมีส่วนร่วมได้เลยถ้ามีไอเดียในการปรับปรุง"
+    "description": "รวมมิตร side-project ทั้งที่รอดและตายแล้ว"
   },
   "seo": {
     "home": {
-      "title": "Fayaz Ahmed",
-      "description": "ผมชื่อ Fayaz วิศวกรซอฟต์แวร์ วิศวกรผลิตภัณฑ์ และนักออกแบบจากบังกาลอร์ ประเทศอินเดีย เชี่ยวชาญในการสร้างเว็บแอปพลิเคชันและเว็บไซต์โดยใช้ Javascript, React, Vue และ Node"
+      "title": "yuttakhan.b",
+      "description": "Blog ส่วนตัวไว้คุยเรื่อง tech, self-note หรือนั่งแซ่มเรื่องอื่น"
     },
     "articles": {
-      "title": "บทความ | Fayaz Ahmed"
+      "title": "บทความ | yuttakhan.b"
     },
     "projects": {
-      "title": "โปรเจกต์ | Fayaz Ahmed"
+      "title": "โปรเจกต์ | yuttakhan.b"
     }
   },
   "common": {
@@ -51,6 +51,6 @@
     "noArticlesYet": "ยังไม่มีบทความ"
   },
   "footer": {
-    "copyright": "© {year} Fayaz Ahmed สงวนลิขสิทธิ์"
+    "copyright": "© {year} Yuttakhan B. สงวนลิขสิทธิ์"
   }
 }
