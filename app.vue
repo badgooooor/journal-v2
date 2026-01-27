@@ -5,7 +5,7 @@
       <div
         class="w-full h-full flex flex-col border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 overflow-hidden relative"
       >
-        <HomeBackground v-if="route.name.startsWith('index')" />
+        <HomeBackground v-if="showBackground" />
         <AppNavbar class="relative z-10" />
         <main class="relative z-10 flex-1 overflow-auto px-6 sm:px-12 py-8">
           <NuxtPage />
@@ -18,6 +18,11 @@
 
 <script setup>
 const route = useRoute();
+
+const showBackground = computed(() => {
+  // Check route path instead of name for better reliability on initial load
+  return route.path === "/" || route.name === "index";
+});
 </script>
 
 <style>
