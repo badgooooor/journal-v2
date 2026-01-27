@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-24">
+  <div class="flex flex-col items-end justify-end space-y-6 h-full">
     <HomeIntro />
   </div>
 </template>
