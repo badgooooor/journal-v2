@@ -10,14 +10,15 @@
         :project="project"
       />
     </div>
-    <div class="flex items-center justify-center mt-6 text-sm">
+    <!-- Temporarily hidden -->
+    <!-- <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
         :label="`${$t('home.allProjects')} →`"
         :to="localePath('/projects')"
         variant="link"
         color="gray"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 

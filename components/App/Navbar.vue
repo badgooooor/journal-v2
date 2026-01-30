@@ -38,11 +38,12 @@ const route = useRoute();
 
 const items = [
   { labelKey: "nav.home", path: "/", icon: "solar:home-smile-outline" },
-  {
-    labelKey: "nav.projects",
-    path: "/projects",
-    icon: "solar:folder-with-files-outline",
-  },
+  // Temporarily hidden
+  // {
+  //   labelKey: "nav.projects",
+  //   path: "/projects",
+  //   icon: "solar:folder-with-files-outline",
+  // },
   {
     labelKey: "nav.articles",
     path: "/articles",
