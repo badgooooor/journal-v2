@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
+    "nuxt-module-feed",
   ],
   css: ["~/assets/css/main.css"],
   ui: {
@@ -60,5 +61,19 @@ export default defineNuxtConfig({
       redirectOn: "root",
     },
     vueI18n: "./i18n/i18n.config.ts",
+  },
+  feed: {
+    sources: [
+      {
+        path: "/feed.xml",
+        type: "rss2",
+        cacheTime: 60 * 15,
+      },
+    ],
+  },
+  nitro: {
+    prerender: {
+      routes: ["/feed.xml"],
+    },
   },
 });
