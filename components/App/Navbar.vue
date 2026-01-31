@@ -25,6 +25,17 @@
           </ULink>
         </UTooltip>
       </template>
+      <UTooltip text="Webring" :ui="{ popper: { strategy: 'absolute' } }">
+        <a
+          href="https://webring.wonderful.software/#/yuttakhanb.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative p-2 flex items-center justify-center transition opacity-75 hover:opacity-100"
+          aria-label="Webring"
+        >
+          <img src="/webring.svg" alt="Webring" class="w-5 h-5" />
+        </a>
+      </UTooltip>
       <div class="w-px h-5 bg-gray-300 dark:bg-gray-700 mx-2"></div>
       <AppLanguageSwitcher />
       <AppThemeToggle />
