@@ -72,6 +72,17 @@ export default defineNuxtConfig({
     ],
   },
   nitro: {
+    minify: true,
+    sourceMap: false,
+    rollupConfig: {
+      output: {
+        manualChunks: (id) => {
+          if (id.includes("node_modules")) {
+            return "vendor";
+          }
+        },
+      },
+    },
     prerender: {
       routes: ["/feed.xml"],
     },
