@@ -1,7 +1,9 @@
 export default defineAppConfig({
   ui: {
-    primary: "teal",
-    gray: "neutral",
+    colors: {
+      primary: "fuchsia",
+      neutral: "neutral",
+    },
     formGroup: {
       help: "text-xs mt-1 text-gray-500 dark:text-gray-400",
       error: "text-xs mt-1 text-red-500 dark:text-red-400",
