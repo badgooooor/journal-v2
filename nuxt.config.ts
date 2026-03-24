@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
     "nuxt-module-feed",
+    "@tresjs/nuxt",
   ],
   css: ["~/assets/css/main.css"],
   ui: {
