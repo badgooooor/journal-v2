@@ -1,0 +1,27 @@
+name: Build PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build site
+        run: bun run build -- --preset=cloudflare-pages
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144

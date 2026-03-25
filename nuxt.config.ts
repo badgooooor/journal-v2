@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/i18n",
     "nuxt-module-feed",
+    "@tresjs/nuxt",
   ],
   css: ["~/assets/css/main.css"],
   ui: {
@@ -74,28 +75,15 @@ export default defineNuxtConfig({
   nitro: {
     minify: true,
     sourceMap: false,
-    externals: {
-      inline: ["three"], // Don't inline large deps
-    },
-    rollupConfig: {
-      output: {
-        manualChunks: (id) => {
-          if (id.includes("three")) {
-            return "three-vendor";
-          }
-
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
-        },
-      },
-    },
     prerender: {
       routes: ["/feed.xml"],
     },
   },
 
   vite: {
+    ssr: {
+      external: ["three", "@tresjs/core"],
+    },
     build: {
       minify: "terser",
       terserOptions: {

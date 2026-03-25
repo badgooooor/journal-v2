@@ -24,6 +24,8 @@ jobs:
 
       - name: Build site
         run: bun run build -- --preset=cloudflare-pages
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
