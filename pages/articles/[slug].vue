@@ -6,7 +6,7 @@
       <ContentDoc :path="`/${locale}/articles/${slug}`" tag="article">
         <template #default="{ doc }">
           <article>
-            <h1>{{ doc.title }}</h1>
+            <h1 class="text-2xl font-semibold text-white">{{ doc.title }}</h1>
             <ContentRenderer :value="doc" />
           </article>
         </template>
