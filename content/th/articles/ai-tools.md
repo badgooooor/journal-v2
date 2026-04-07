@@ -1,7 +1,7 @@
 ---
 title: "Two AI tools worth trying: GSD and RTK"
 description: "Quick thoughts on Get-Shit-Done and RTK — tools that improve AI coding workflows through better prompting structure and token optimization."
-published: 2026/04/04
+published: 2026/04/07
 slug: "ai-tools"
 tags:
   - ai
