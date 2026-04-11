@@ -25,6 +25,18 @@
           </ULink>
         </UTooltip>
       </template>
+      <UTooltip text="Resume" :ui="{ popper: { strategy: 'absolute' } }">
+        <a
+          href="https://resume.yuttakhanb.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative p-2 flex items-center justify-center transition text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400"
+          aria-label="Resume"
+        >
+          <Icon aria-hidden="true" name="solar:case-outline" class="w-5 h-5" />
+          <span class="sr-only">Resume</span>
+        </a>
+      </UTooltip>
       <UTooltip text="Webring" :ui="{ popper: { strategy: 'absolute' } }">
         <a
           href="https://webring.wonderful.software/#/yuttakhanb.dev"
