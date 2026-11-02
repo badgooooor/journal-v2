@@ -27,6 +27,7 @@
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.4.0",
     "@nuxtjs/i18n": "^10.2.1",
+    "manimgx": "^0.1.1",
     "three": "^0.182.0",
     "vue-use-fixed-header": "^2.0.3"
   }
