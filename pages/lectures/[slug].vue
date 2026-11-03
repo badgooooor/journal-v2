@@ -9,7 +9,7 @@
           <template #default="{ doc }">
             <article>
               <h1 class="text-2xl font-semibold text-white">{{ doc.title }}</h1>
-              <div v-if="doc.tags?.length" class="not-prose flex gap-2 mb-6 -mt-4">
+              <div v-if="doc.tags?.length" class="not-prose flex gap-2 mb-6 mt-1">
                 <span
                   v-for="tag in doc.tags"
                   :key="tag"
