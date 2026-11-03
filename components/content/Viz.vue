@@ -2,7 +2,7 @@
   <span
     ref="el"
     class="bg-blue-200/60 dark:bg-blue-400/30 rounded px-0.5 cursor-pointer"
-    @click="onMobileClick"
+    @click="onClick"
   >
     <slot />
   </span>
@@ -31,9 +31,12 @@ const { pause, resume } = useIntersectionObserver(
 
 onMounted(() => resume())
 
-const onMobileClick = () => {
+const onClick = () => {
   if (width.value < 768) {
     mobileScene.value = props.scene
+  } else {
+    if (dismissedScene.value === props.scene) dismissedScene.value = null
+    activeScene.value = props.scene
   }
 }
 </script>
