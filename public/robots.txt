@@ -1,0 +1,44 @@
+# Allow all search engine crawlers
+User-agent: *
+Allow: /
+
+# --- AI Training Opt-Out ---
+# Per-provider directives (effective now)
+
+# Google (Gemini, Vertex AI)
+User-agent: Google-Extended
+Disallow: /
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# ByteDance
+User-agent: Bytespider
+Disallow: /
+
+# Meta AI
+User-agent: FacebookBot
+Disallow: /
+
+# Apple
+User-agent: Applebot-Extended
+Disallow: /
+
+# --- AIPREF Shared Token (placeholder) ---
+# TODO: Add AIPREF policy token when standard launches (2027)
+# Ref: https://developers.google.com/search/blog/2026/10/ai-training-control
