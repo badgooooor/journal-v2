@@ -82,7 +82,7 @@ export default defineNuxtConfig({
 
   vite: {
     ssr: {
-      external: ["three", "@tresjs/core"],
+      external: ["three", "@tresjs/core", "manimgx"],
     },
     build: {
       minify: "terser",
